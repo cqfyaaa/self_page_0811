@@ -1,0 +1,475 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>特困名额查询表</title>
+		<link rel="icon" type="image/x-icon" href="bttb/favicon.ico"/><!--标题栏图标-->
+		<script src="jQuery/jQuery.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			
+			.syme{font-size: 50px;font-weight: 700; text-align: center;display: none; }
+			.cxme{margin: 20px;padding: 10px;}
+			.bkdx{width: 120px;20px;font-size: 27px;font-weight: 700;margin: 15px;	}
+			.btn{	margin-left: 220px;}
+		</style>
+	</head>
+	<body>
+		<div >
+			<h4 style="text-align: center;color: brown;font-size: 50px;">再生医学特困补助查询区</h4>
+							<p id="bjxs" class="syme">北京市</p>
+							<p id="tjxs"  class="syme">天津市</p>
+							<p id="hbxs" class="syme">河北省</p>
+							<p id="sxxs" class="syme">山西省</p>
+							<p id="nmgxzx" class="syme">内蒙古</p>
+							<p id="lnxs" class="syme">辽宁省</p>
+							<p id="jlxs" class="syme">吉林省</p>
+							<p id="hljsx" class="syme">黑龙江省</p>
+							<p id="shxs" class="syme">上海市</p>
+							<p id="jsxs" class="syme">江苏省</p>
+							<p id="zjxs" class="syme">浙江省</p>
+							<p id="anxs" class="syme">安徽省</p>
+							<p id="sdxs" class="syme">山东省</p>
+							<p id="jxss" class="syme">江西省</p>
+							<p id="fjxs" class="syme">福建省</p>
+							<p id="hnxs" class="syme">海南省</p>
+							<p id="gdxs" class="syme">广东省</p>
+							<p id="gaxt" class="syme">港澳台</p>
+							<p id="sxass" class="syme">陕西省</p>
+							<p id="gsxs" class="syme">甘肃省</p>
+							<p id="qhxs" class="syme">青海省</p>
+							<p id="nxx" class="syme">宁夏</p>
+							<p id="xjx" class="syme">新疆</p>
+							<p id="xzx" class="syme">西藏</p>
+							<p id="hnxzz" class="syme">河南省</p>
+							<p id="hb-xs" class="syme">湖北省</p>
+							<p id="hndxs" class="syme">湖南省</p>
+							<p id="scxs" class="syme">四川省</p>
+							<p id="gzxs" class="syme">贵州省</p>
+							<p id="ynxs" class="syme">云南省</p>
+							<p id="cqxs" class="syme">重庆市</p>
+							<p id="gxxs" class="syme">广西省</p>
+							<p style="color: red;font-size: 40px;text-align: center;">剩余名额：<XS ></XS></p>
+			<div class="cxme">
+				<input type="button" name="bjs"  value="北京市" class="bkdx" />		
+				<input type="button" name="bj"  value="天津市" class="bkdx"/>
+				<input type="button" name="bj" id="" value="河北省" class="bkdx"/>
+				<input type="button" name="bj" id="" value="山西省" class="bkdx"/>
+				<input type="button" name="bj" id="" value="内蒙古" class="bkdx"/>
+				<input type="button" name="bj" id="" value="辽宁省" class="bkdx"/>
+				<input type="button" name="bj" id="" value="吉林省" class="bkdx"/>
+				<input type="button" name="bj" id="" value="黑龙江省" class="bkdx"/>
+				<input type="button" name="bj" id="" value="上海市" class="bkdx"/>
+				<input type="button" name="bj" id="" value="山东省" class="bkdx"/>
+				<input type="button" name="bj" id="" value="江苏省" class="bkdx"/>
+				<input type="button" name="bj" id="" value="浙江省" class="bkdx"/>
+				<input type="button" name="bj" id="" value="安徽省" class="bkdx"/>
+				<input type="button" name="bj" id="" value="江西省" class="bkdx"/>
+				<input type="button" name="bj" id="" value="福建省" class="bkdx"/>
+				<input type="button" name="bj" id="bj" value="海南省" class="bkdx"/>
+				<input type="button" name="bj" id="bj" value="广东省" class="bkdx"/>
+				<input type="button" name="bj" id="bj" value="港澳台" class="bkdx"/>
+				<input type="button" name="bj" id="bj" value="陕西省" class="bkdx"/>
+				<input type="button" name="bj" id="bj" value="甘肃省" class="bkdx"/>
+				<input type="button" name="bj" id="bj" value="青海省" class="bkdx"/>
+				<input type="button" name="bj" id="bj" value="宁夏" class="bkdx"/>
+				<input type="button" name="bj" id="bj" value="新疆" class="bkdx"/>
+				<input type="button" name="bj" id="bj" value="西藏" class="bkdx"/>
+				<input type="button" name="bj" id="bj" value="河南省" class="bkdx"/>
+				<input type="button" name="bj" id="bj" value="湖北省" class="bkdx"/>
+				<input type="button" name="bj" id="bj" value="湖南省" class="bkdx"/>
+				<input type="button" name="bj" id="bj" value="四川省" class="bkdx"/>
+				<input type="button" name="bj" id="bj" value="贵州省" class="bkdx"/>
+				<input type="button" name="bj" id="bj" value="云南省" class="bkdx"/>
+				<input type="button" name="bj" id="bj" value="重庆市" class="bkdx"/>
+				<input type="button" name="bj" id="bj" value="广西省" class="bkdx"/>
+									
+																					
+				<script type="text/javascript">
+		function sj() {
+    //x上限，y下限     
+    var x = 10;
+    var y = 0;
+    var rand = parseInt(Math.random() * (x - y + 1) + y);
+    $("XS").html("").append(rand);
+	}
+		$(".bkdx").click(function() {
+    			sj();			
+		});		
+
+	
+		</script>
+			
+			</div>
+		<button id="bjs" class="an">北京市</button>   <button id="tjs"class="an">天津市</button>  <button id="hbs"class="an">河北省</button>
+		<button id="sxs" class="an">山西省</button>	<button id="nmgzx" class="an">内蒙古</button>	<button id="lns" class="an">辽宁省</button>	
+		<button id="jls" class="an">吉林省</button>   <button id="hljs"class="an">黑龙江省</button>  <button id="shs"class="an">上海市</button>
+		<button id="jss" class="an">江苏省</button>	<button id="zjs" class="an">浙江省</button>	<button id="ahs" class="an">安徽省</button>
+		<button id="sds" class="an">山东省</button>   <button id="jxs"class="an">江西省</button>  <button id="fjs"class="an">福建省</button>
+		<button id="hns" class="an">海南省</button>	<button id="gds" class="an">广东省</button>	<button id="gat" class="an">港澳台</button>	
+		<button id="sxas" class="an">陕西省</button>   <button id="gss"class="an">甘肃省</button>  <button id="qhs"class="an">青海省</button>
+		<button id="nx" class="an">宁夏</button>		<button id="xj" class="an">新疆</button>		<button id="xz" class="an">西藏</button>	
+		<button id="hnzz" class="an">河南省</button>   <button id="hb-s"class="an">湖北省</button>  <button id="hnds"class="an">湖南省</button>
+		<button id="scs" class="an">四川省</button>	<button id="gzs" class="an">贵州省</button>	<button id="yns" class="an">云南省</button>	
+		<button id="cqs" class="an">重庆市</button>   <button id="gxs"class="an">广西省</button>  
+			<script type="text/javascript">
+			$(function(){
+			$("#bjs").click(function(){
+				$("#bjxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#tjs").click(function(){
+				$("#tjxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#hbs").click(function(){
+				$("#hbxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#sxs").click(function(){
+				$("#sxxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#nmgzx").click(function(){
+				$("#nmgxzx").toggle()
+				})	
+			});	
+			$(function(){
+			$("#lns").click(function(){
+				$("#lnxs").toggle()
+				})	
+			});		
+			$(function(){
+			$("#jls").click(function(){
+				$("#jlxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#hljs").click(function(){
+				$("#hljsx").toggle()
+				})	
+			});	
+			$(function(){
+			$("#shs").click(function(){
+				$("#shxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#jss").click(function(){
+				$("#jsxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#zjs").click(function(){
+				$("#zjxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#ahs").click(function(){
+				$("#anxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#sds").click(function(){
+				$("#sdxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#jxs").click(function(){
+				$("#jxss").toggle()
+				})	
+			});	
+			$(function(){
+			$("#fjs").click(function(){
+				$("#fjxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#hns").click(function(){
+				$("#hnxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#gds").click(function(){
+				$("#gdxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#gat").click(function(){
+				$("#gaxt").toggle()
+				})	
+			});		
+			$(function(){
+			$("#sxas").click(function(){
+				$("#sxass").toggle()
+				})	
+			});	
+			$(function(){
+			$("#gss").click(function(){
+				$("#gsxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#qhs").click(function(){
+				$("#qhxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#nx").click(function(){
+				$("#nxx").toggle()
+				})	
+			});		
+			$(function(){
+			$("#xj").click(function(){
+				$("#xjx").toggle()
+				})	
+			});	
+			$(function(){
+			$("#xz").click(function(){
+				$("#xzx").toggle()
+				})	
+			});	
+			
+			
+			$(function(){
+			$("#hnzz").click(function(){
+				$("#hnxzz").toggle()
+				})	
+			});	
+			$(function(){
+			$("#hb-s").click(function(){
+				$("#hb-xs").toggle()
+				})	
+			});		
+			$(function(){
+			$("#hnds").click(function(){
+				$("#hndxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#scs").click(function(){
+				$("#scxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#gzs").click(function(){
+				$("#gzxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#yns").click(function(){
+				$("#ynxs").toggle()
+				})	
+			});		
+			$(function(){
+			$("#cqs").click(function(){
+				$("#cqxs").toggle()
+				})	
+			});	
+			$(function(){
+			$("#gxs").click(function(){
+				$("#gxxs").toggle()
+				})	
+			});	
+			</script>		
+		</div>	
+	
+	
+	<hr / ><p style="text-align: center;font-size: 30px;background: yellow;">第二种方法查询名额</p><hr />
+	
+	<div class="deg">
+		<style type="text/css">
+			.tp{margin-left: 200px;}
+			.xan{width: 135px;height:45px;font-size: 27px;font-weight: 700;margin: 15px;	}
+			.tpyc{display: none;}
+		</style>
+		
+		<div class="tp">
+		<img src="tksyme/ahs.jpg" id="z1" class="tpyc"/>
+		<img src="tksyme/bjs.jpg" id="z2" class="tpyc"/>
+		<img src="tksyme/cqs.jpg" id="z3" class="tpyc"/>
+		<img src="tksyme/fjs.jpg" id="z4" class="tpyc"/>
+		<img src="tksyme/gat.jpg" id="z5" class="tpyc"/>
+		<img src="tksyme/gds.jpg" id="z6" class="tpyc"/>
+		<img src="tksyme/gss.jpg" id="z7" class="tpyc"/>
+		<img src="tksyme/gx.jpg" id="z8" class="tpyc"/>
+		<img src="tksyme/gzs.jpg" id="z9" class="tpyc"/>
+		<img src="tksyme/hbs.jpg" id="z10" class="tpyc"/>
+		<img src="tksyme/hbsf.jpg" id="z11" class="tpyc"/>
+		<img src="tksyme/hlj.jpg" id="z12" class="tpyc"/>
+		<img src="tksyme/hns.jpg" id="z13" class="tpyc"/>
+		<img src="tksyme/hnsf.jpg" id="z14" class="tpyc"/>
+		<img src="tksyme/hnsfs.jpg" id="z15" class="tpyc"/>
+		<img src="tksyme/jss.jpg" id="z16" class="tpyc"/>
+		<img src="tksyme/jxs.jpg" id="z17" class="tpyc"/>
+		<img src="tksyme/ln.jpg" id="z18" class="tpyc"/>
+		<img src="tksyme/nmg.jpg" id="z19" class="tpyc"/>
+		<img src="tksyme/nx.jpg" id="z201" class="tpyc"/>
+		<img src="tksyme/qhs.jpg" id="z21a" class="tpyc"/>
+		<img src="tksyme/sax.jpg" id="z22" class="tpyc"/>
+		<img src="tksyme/scs.jpg" id="z23" class="tpyc"/>
+		<img src="tksyme/sds.jpg" id="z24" class="tpyc"/>
+		<img src="tksyme/shs.jpg" id="z25" class="tpyc"/>
+		<img src="tksyme/sxs.jpg" id="z26" class="tpyc"/>
+		<img src="tksyme/tjs.jpg" id="z27" class="tpyc"/>
+		<img src="tksyme/xj.jpg" id="z28" class="tpyc"/>
+		<img src="tksyme/xz.jpg" id="z29" class="tpyc"/>
+		<img src="tksyme/yns.jpg" id="z30" class="tpyc"/>
+		<img src="tksyme/zjs.jpg" id="z31" class="tpyc"/>
+		<img src="tksyme/jls.jpg" id="z32" class="tpyc"/>
+		</div>	
+		
+		<button id="xbjs" class="xan">北京市</button>   <button id="xtjs"class="xan">天津市</button>  <button id="xhbs"class="xan">河北省</button>
+		<button id="xsxs" class="xan">山西省</button>	<button id="xnmgzx" class="xan">内蒙古</button>	<button id="xlns" class="xan">辽宁省</button>	
+		<button id="xjls" class="xan">吉林省</button>   <button id="xhljs"class="xan">黑龙江省</button>  <button id="xshs"class="xan">上海市</button>
+		<button id="xjss" class="xan">江苏省</button>	<button id="xzjs" class="xan">浙江省</button>	<button id="xahs" class="xan">安徽省</button>
+		<button id="xsds" class="xan">山东省</button>   <button id="xjxs"class="xan">江西省</button>  <button id="xfjs"class="xan">福建省</button>
+		<button id="xhns" class="xan">海南省</button>	<button id="xgds" class="xan">广东省</button>	<button id="xgat" class="xan">港澳台</button>	
+		<button id="xsxas" class="xan">陕西省</button>   <button id="xgss"class="xan">甘肃省</button>  <button id="xdqhs"class="xan">青海省</button>
+		<button id="xdnxs" class="xan">宁夏</button>		<button id="xxxj" class="xan">新疆</button>		<button id="xxz" class="xan">西藏</button>	
+		<button id="xhnzz" class="xan">河南省</button>   <button id="xhb-s"class="xan">湖北省</button>  <button id="xhnds"class="xan">湖南省</button>
+		<button id="xscs" class="xan">四川省</button>	<button id="xgzs" class="xan">贵州省</button>	<button id="xyns" class="xan">云南省</button>	
+		<button id="xcqs" class="xan">重庆市</button>   <button id="xgxs"class="xan">广西省</button>  
+		
+		<script type="text/javascript">
+				$("#xbjs").click(function(){
+					$("#z2").toggle(2000);
+				})
+				
+				$("#xtjs").click(function(){
+					$("#z27").toggle(2000);
+				})
+				
+				$("#xhbs").click(function(){
+					$("#z10").toggle(2000);
+				})
+				
+				$("#xsxs").click(function(){
+					$("#z26").toggle(2000);
+				})
+				
+				$("#xnmgzx").click(function(){
+					$("#z19").toggle(2000);
+				})
+				
+				$("#xlns").click(function(){
+					$("#z18").toggle(2000);
+				})
+				
+				$("#xjls").click(function(){
+					$("#z32").toggle(2000);
+				})
+				
+				$("#xhljs").click(function(){
+					$("#z12").toggle(2000);
+				})
+				
+				$("#xshs").click(function(){
+					$("#z25").toggle(2000);
+				})
+				
+				$("#xjss").click(function(){
+					$("#z16").toggle(2000);
+				})
+				
+				$("#xzjs").click(function(){
+					$("#z31").toggle(2000);
+				})
+				
+				$("#xahs").click(function(){
+					$("#z1").toggle(2000);
+				})
+				
+				$("#xsds").click(function(){
+					$("#z24").toggle(2000);
+				})
+				
+				$("#xjxs").click(function(){
+					$("#z17").toggle(2000);
+				})
+				
+				$("#xfjs").click(function(){
+					$("#z4").toggle(2000);
+				})
+				
+				$("#xhns").click(function(){
+					$("#z13").toggle(2000);
+				})
+				
+				$("#xgds").click(function(){
+					$("#z6").toggle(2000);
+				})
+				
+				$("#xgat").click(function(){
+					$("#z5").toggle(2000);
+				})
+				
+				$("#xsxas").click(function(){
+					$("#z22").toggle(2000);
+				})
+				
+				$("#xgss").click(function(){
+					$("#z7").toggle(2000);
+				})
+				
+				
+				$("#xdqhs").click(function(){
+					$("#z21a").toggle(2000);
+				})
+				
+				$("#xdnxs").click(function(){
+					$("#z21a").toggle(2000);
+				})
+			
+				$("#xxxj").click(function(){
+					$("#z28").toggle(2000);
+				})
+			
+				
+				$("xxz").click(function(){
+					$("#z29").toggle(2000);
+				})
+				
+				$("#xhnzz").click(function(){
+					$("#z14").toggle(2000);
+				})
+				
+				$("#xhb-s").click(function(){
+					$("#z11").toggle(2000);
+				})
+				
+				$("#xhnds").click(function(){
+					$("#z15").toggle(2000);
+				})
+				
+				$("#xscs").click(function(){
+					$("#z23").toggle(2000);
+				})
+				
+				$("#xgzs").click(function(){
+					$("#z9").toggle(2000);
+				})
+				
+				$("#xgzs").click(function(){
+					$("#z9").toggle(2000);
+				})
+				
+				$("#xyns").click(function(){
+					$("#z30").toggle(2000);
+				})
+				
+				$("#xcqs").click(function(){
+					$("#z3").toggle(2000);
+				})
+				
+				$("#xgxs").click(function(){
+					$("#z8").toggle(2000);
+				})
+			</script>
+	</div>
+	
+	</body>
+</html>
